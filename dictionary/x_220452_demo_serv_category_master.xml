@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Category Master" max_length="40" name="x_220452_demo_serv_category_master" type="collection">
+        <element label="ID" max_length="255" name="id" type="string"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Parent ID" max_length="255" name="parent_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="u_category" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_category" dependent_on_field="u_category" label="Criterion 1" max_length="40" name="u_criterion_1" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_1" dependent_on_field="u_criterion_1" label="Criterion 2" max_length="40" name="u_criterion_2" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_2" dependent_on_field="u_criterion_2" label="Criterion 3" max_length="40" name="u_criterion_3" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_3" dependent_on_field="u_criterion_3" label="Criterion 4" max_length="40" name="u_criterion_4" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_4" dependent_on_field="u_criterion_4" label="Criterion 5" max_length="40" name="u_criterion_5" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_5" dependent_on_field="u_criterion_5" label="Criterion 6" max_length="40" name="u_criterion_6" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_6" dependent_on_field="u_criterion_6" label="Criterion 7" max_length="40" name="u_criterion_7" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true,ref_ac_columns=u_name,ref_auto_completer=AJAXTableCompleter" label="Roles" max_length="1024" name="u_roles" reference="sys_user_role" type="glide_list"/>
+    </element>
+</database>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="incident" label="Incident" max_length="40" name="x_220452_demo_serv_my_incident" sizeclass="1" type="collection">
+        <element label="Actual Effort" max_length="40" name="u_actual_effort" type="glide_duration"/>
+        <element label="Assign Business SME" max_length="40" name="u_assign_business_sme" type="boolean"/>
+        <element label="Assign Tech Team" max_length="40" name="u_assign_tech_team" type="boolean"/>
+        <element label="Bridge Opened" max_length="40" name="u_bridge_opened" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" mandatory="true" max_length="40" name="u_category" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="category" dependent_on_field="category" label="[Criterion 1]" mandatory="true" max_length="40" name="u_criterion_1" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_1" dependent_on_field="u_criterion_1" label="[Criterion 2]" max_length="40" name="u_criterion_2" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_2" dependent_on_field="u_criterion_2" label="[Criterion 3]" max_length="40" name="u_criterion_3" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_3" dependent_on_field="u_criterion_3" label="[Criterion 4]" max_length="40" name="u_criterion_4" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_4" dependent_on_field="u_criterion_4" label="[Criterion 5]" max_length="40" name="u_criterion_5" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_5" dependent_on_field="u_criterion_5" label="[Criterion 6]" max_length="40" name="u_criterion_6" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_6" dependent_on_field="u_criterion_6" label="[Criterion 7]" max_length="40" name="u_criterion_7" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Environment" max_length="40" name="u_environment" type="string">
+            <choice>
+                <element label="Non Environment Issue" sequence="0" value="5"/>
+                <element label="Production" sequence="1" value="6"/>
+                <element label="Development" sequence="2" value="2"/>
+                <element label="Test" sequence="3" value="3"/>
+                <element label="E2E Testing" sequence="4" value="1"/>
+            </choice>
+        </element>
+        <element label="Estimated Effort" max_length="40" name="u_estimated_effort" type="glide_duration"/>
+        <element label="Hardware Outage" max_length="40" name="u_hardware_outage" type="boolean"/>
+        <element label="H/W Outage Duration" max_length="40" name="u_hw_outage_duration" read_only="true" type="glide_duration"/>
+        <element label="H/W Outage Start" max_length="40" name="u_hw_outage_start" type="glide_date_time"/>
+        <element label="H/W Outage Stop" max_length="40" name="u_hw_outage_stop" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Root Cause" max_length="40" name="u_root_cause" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Root Cause Category" max_length="40" name="u_root_cause_category" type="string">
+            <choice/>
+        </element>
+        <element label="SR Creator" max_length="32" name="u_sr_creator" reference="sys_user" type="reference"/>
+        <element label="Work end" max_length="40" name="u_work_end" type="glide_date_time"/>
+        <element label="Work start" max_length="40" name="u_work_start" type="glide_date_time"/>
+    </element>
+</database>

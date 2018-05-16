@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_category" table="x_220452_demo_serv_service_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Access-Related</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:27:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>604ffb77dbb113005b76f8fdbf96195b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:27:20</sys_updated_on>
+            <value>Access-Related</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Application</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:27:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>604ffb77dbb113005b76f8fdbf96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:27:20</sys_updated_on>
+            <value>Application</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Groupware</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:27:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e04f3f77dbb113005b76f8fdbf9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:27:20</sys_updated_on>
+            <value>Groupware</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Infrastructure</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:27:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec4f3f77dbb113005b76f8fdbf9619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:27:20</sys_updated_on>
+            <value>Infrastructure</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>User Device</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:27:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e84f3f77dbb113005b76f8fdbf9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:27:20</sys_updated_on>
+            <value>User Device</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_category</element>
+            <name>x_220452_demo_serv_service_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:27:20</sys_created_on>
+            <sys_id>e84ffb77dbb113005b76f8fdbf96195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_category</sys_name>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_choice_x_220452_demo_serv_service_request_u_category</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:27:20</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

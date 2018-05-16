@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_criterion_3</field>
+        <global>true</global>
+        <messages/>
+        <name>onChange [Criterion 3] MI</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading) {
+		return;
+	}
+
+	if (control.options.length == 1) {
+		g_form.setDisplay('u_criterion_3', false);
+	} else {
+		g_form.setDisplay('u_criterion_3', true);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 09:34:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2638dd58dbc213005b76f8fdbf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange [Criterion 3] MI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+        <sys_update_name>sys_script_client_2638dd58dbc213005b76f8fdbf9619b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 09:34:54</sys_updated_on>
+        <table>x_220452_demo_serv_my_incident</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

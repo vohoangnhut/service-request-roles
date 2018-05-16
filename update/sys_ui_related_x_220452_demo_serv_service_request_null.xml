@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_220452_demo_serv_service_request" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Service Request - Default view" name="x_220452_demo_serv_service_request" related_list="NULL" sys_domain="global" view="Default view">12e9b86cdb8a13005b76f8fdbf961978</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>incident.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-10 02:00:33</sys_created_on>
+            <sys_id>16e9bc6cdb8a13005b76f8fdbf96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-10 02:00:33</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Service Request - Default view" name="x_220452_demo_serv_service_request" related_list="NULL" sys_domain="global" view="Default view">12e9b86cdb8a13005b76f8fdbf961978</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>change_request.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-10 02:00:33</sys_created_on>
+            <sys_id>1ee9bc6cdb8a13005b76f8fdbf96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-10 02:00:33</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Service Request - Default view" name="x_220452_demo_serv_service_request" related_list="NULL" sys_domain="global" view="Default view">12e9b86cdb8a13005b76f8fdbf961978</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>task_sla.task</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-10 02:00:33</sys_created_on>
+            <sys_id>12e9bc6cdb8a13005b76f8fdbf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-10 02:00:33</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Service Request - Default view" name="x_220452_demo_serv_service_request" related_list="NULL" sys_domain="global" view="Default view">12e9b86cdb8a13005b76f8fdbf961978</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>problem.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-10 02:00:33</sys_created_on>
+            <sys_id>16e9bc6cdb8a13005b76f8fdbf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-10 02:00:33</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Service Request - Default view</calculated_name>
+            <filter/>
+            <name>x_220452_demo_serv_service_request</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-10 02:00:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>12e9b86cdb8a13005b76f8fdbf961978</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Service Request - Default view</sys_name>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_ui_related_x_220452_demo_serv_service_request_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-10 02:00:33</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

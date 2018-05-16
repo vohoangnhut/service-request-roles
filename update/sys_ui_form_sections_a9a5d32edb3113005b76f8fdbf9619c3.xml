@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="a9a5d32edb3113005b76f8fdbf9619c3" sys_domain="global" table="x_220452_demo_serv_service_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:13:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>21a5d32edb3113005b76f8fdbf9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_220452_demo_serv_service_request" name="x_220452_demo_serv_service_request" sys_domain="global" view="Default view">a9a5d32edb3113005b76f8fdbf9619c3</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_220452_demo_serv_service_request" sys_domain="global" view="Default view">1c40d32adb3113005b76f8fdbf961924</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-04 08:13:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:13:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2da5d32edb3113005b76f8fdbf9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_220452_demo_serv_service_request" name="x_220452_demo_serv_service_request" sys_domain="global" view="Default view">a9a5d32edb3113005b76f8fdbf9619c3</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_220452_demo_serv_service_request" sys_domain="global" view="Default view">6da5d32edb3113005b76f8fdbf9619c2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-04 08:13:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_220452_demo_serv_service_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:13:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a9a5d32edb3113005b76f8fdbf9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_220452_demo_serv_service_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_a9a5d32edb3113005b76f8fdbf9619c3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-04 08:13:08</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

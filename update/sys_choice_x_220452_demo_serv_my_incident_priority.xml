@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="priority" table="x_220452_demo_serv_my_incident" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Critical</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa8e51dcdbc213005b76f8fdbf9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:02:06</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>High</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>268e51dcdbc213005b76f8fdbf9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:02:07</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medium</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea8e51dcdbc213005b76f8fdbf9619b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:02:07</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Low</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a8e51dcdbc213005b76f8fdbf9619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:02:07</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_id>ee8e51dcdbc213005b76f8fdbf9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>priority</sys_name>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_choice_x_220452_demo_serv_my_incident_priority</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:02:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

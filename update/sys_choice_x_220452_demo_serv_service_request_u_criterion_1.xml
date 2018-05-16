@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_criterion_1" table="x_220452_demo_serv_service_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Access-Related</dependent_value>
+            <element>u_criterion_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AIMS (MARS)</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:28:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e66f3777dbb113005b76f8fdbf961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:28:01</sys_updated_on>
+            <value>AIMS (MARS)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Application</dependent_value>
+            <element>u_criterion_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IBIS Plus</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:28:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>199fbf77dbb113005b76f8fdbf961999</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:28:45</sys_updated_on>
+            <value>IBIS Plus</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Access-Related</dependent_value>
+            <element>u_criterion_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AODOCS</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:28:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e26fbf77dbb113005b76f8fdbf961992</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:28:01</sys_updated_on>
+            <value>AODOCS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Application</dependent_value>
+            <element>u_criterion_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>INTTRA</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:28:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>559fbf77dbb113005b76f8fdbf96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:28:45</sys_updated_on>
+            <value>INTTRA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Access-Related</dependent_value>
+            <element>u_criterion_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BACS</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:28:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee6fbf77dbb113005b76f8fdbf961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:28:02</sys_updated_on>
+            <value>BACS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Application</dependent_value>
+            <element>u_criterion_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OPUS</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:28:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>519fbf77dbb113005b76f8fdbf96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:28:45</sys_updated_on>
+            <value>OPUS</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_criterion_1</element>
+            <name>x_220452_demo_serv_service_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 08:28:01</sys_created_on>
+            <sys_id>626f3777dbb113005b76f8fdbf961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_criterion_1</sys_name>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_choice_x_220452_demo_serv_service_request_u_criterion_1</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 08:28:01</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

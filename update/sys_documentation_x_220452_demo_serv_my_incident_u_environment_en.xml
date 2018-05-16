@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_environment" label="Environment" language="en" table="x_220452_demo_serv_my_incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_environment</element>
+            <help/>
+            <hint/>
+            <label>Environment</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <plural>Environments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 04:04:37</sys_created_on>
+            <sys_id>31bc8890db4213005b76f8fdbf9619d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Environment</sys_name>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_documentation_x_220452_demo_serv_my_incident_u_environment_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 04:04:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

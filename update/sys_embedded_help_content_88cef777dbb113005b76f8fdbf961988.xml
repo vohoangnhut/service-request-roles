@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>reporting</category>
+        <content><![CDATA[  <h1 class="title topictitle1">Import Tables list</h1>    <div class="body conbody">    <p class="p">This list displays information about external Microsoft Excel data sources that have been      imported into your instance. The <span class="ph uicontrol">Import Tables</span> list is visible only to      users with admin roles.</p>    <p class="p"><span class="ph">Click the column headers to search, sort, filter, and    edit data. </span></p>    <div class="p">The <span class="ph uicontrol">Import Tables</span> list contains the following columns by default:<ul class="ul" id="sys_report_import_table_list-normal__ul_rmy_kgv_cz"><li class="li">Name – The name given to the data source when the user uploaded it.</li><li class="li">Table – The name assigned to the table by your instance.</li><li class="li">Created by user – The user name of the user who uploaded the external file.</li><li class="li">Filename – The filename of the uploaded Microsoft Excel file.</li><li class="li">Active – Boolean value. True if the file has not yet expired. The user who uploads the          file sets the expiration date.</li><li class="li">Expiration days – Number of days before the expiration date specified when the file was          uploaded.</li><li class="li">Expire on date – The expiration date specified when the file was uploaded.</li><li class="li">Expired – Boolean value. True if the expiration date has passed.</li></ul></div>  </div>  <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:UsingImportedReportData&amp;version&#61;kingston" target="_blank">Using imported report data</a></div></div></div></div>]]></content>
+        <last_sync>2018-05-08 08:25:07</last_sync>
+        <modifier>normal</modifier>
+        <name>sys_report_import_table_list-normal</name>
+        <page>sys_report_import_table_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-05-08 08:25:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88cef777dbb113005b76f8fdbf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_report_import_table_list-normal</sys_name>
+        <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+        <sys_update_name>sys_embedded_help_content_88cef777dbb113005b76f8fdbf961988</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-05-08 08:25:07</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=88cef777dbb113005b76f8fdbf961988"/>
+</record_update>

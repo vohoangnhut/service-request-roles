@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>Copy Service Request</action_name>
+        <active>true</active>
+        <client>false</client>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_style/>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Copy Service Request</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var newRec = new GlideRecord(current.getTableName()); //Current Service Request
+//Insert Record with default value
+//newRec.newRecord();
+
+// Form
+newRec.u_ticket_requester = current.u_ticket_requester;
+newRec.u_category = current.u_category;
+newRec.u_criterion_1 = current.u_criterion_1;
+newRec.u_criterion_2 = current.u_criterion_2;
+newRec.u_criterion_3 = current.u_criterion_3;
+newRec.u_criterion_4 = current.u_criterion_4;
+newRec.u_criterion_5 = current.u_criterion_5;
+newRec.u_criterion_6 = current.u_criterion_6;
+newRec.u_criterion_7 = current.u_criterion_7;
+newRec.u_environment = current.u_environment;
+newRec.impact = current.impact;
+newRec.priority = current.priority;
+newRec.u_estimated_effort = current.u_estimated_effort;
+newRec.u_actual_effort = current.u_actual_effort;
+newRec.state = current.state;
+newRec.u_ticket_creator = current.u_ticket_creator;
+newRec.due_date = current.due_date;
+newRec.work_start = current.work_start;
+newRec.work_end = current.work_end;
+newRec.u_resolved_date = current.u_resolved_date;
+newRec.u_resolved_by = current.u_resolved_by;
+newRec.u_assign_business_sme = current.u_assign_business_sme;
+newRec.u_assign_tech_team = current.u_assign_tech_team;
+newRec.assignment_group = current.assignment_group;
+newRec.assigned_to = current.assigned_to;
+newRec.u_problem_number = current.u_problem_number;
+newRec.watch_list = current.watch_list;
+// Details
+newRec.short_description = current.short_description;
+newRec.description = current.description;
+newRec.u_resolution = current.u_resolution;
+newRec.work_notes = current.work_notes;
+// Update
+newRec.update();
+gs.addInfoMessage("Service Request " + newRec.number + " created");
+//Redirect to New SR
+action.setRedirectURL(newRec);
+//Button Back will be Previous SR
+action.setReturnURL(current);]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-04 08:52:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>037e5f62db7113005b76f8fdbf961985</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Copy Service Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+        <sys_update_name>sys_ui_action_037e5f62db7113005b76f8fdbf961985</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-10 03:12:29</sys_updated_on>
+        <table>x_220452_demo_serv_service_request</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

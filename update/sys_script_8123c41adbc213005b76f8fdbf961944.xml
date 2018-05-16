@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_220452_demo_serv_category_master</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set default value</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	g_scratchpad.u_category_old = current.u_category;
+// 	current.u_category = '';
+	g_scratchpad.u_criterion_1_old = current.u_criterion_1;
+// 	current.u_criterion_1 = '';
+	g_scratchpad.u_criterion_2_old = current.u_criterion_2;
+// 	current.u_criterion_2 = '';
+	g_scratchpad.u_criterion_3_old = current.u_criterion_3;
+// 	current.u_criterion_3 = '';
+	g_scratchpad.u_criterion_4_old = current.u_criterion_4;
+// 	current.u_criterion_4 = '';
+	g_scratchpad.u_criterion_5_old = current.u_criterion_5;
+// 	current.u_criterion_5 = '';
+	g_scratchpad.u_criterion_6_old = current.u_criterion_6;
+// 	current.u_criterion_6 = '';
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 08:31:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8123c41adbc213005b76f8fdbf961944</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Set default value</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+        <sys_update_name>sys_script_8123c41adbc213005b76f8fdbf961944</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-16 04:05:02</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=8123c41adbc213005b76f8fdbf961944"/>
+</record_update>

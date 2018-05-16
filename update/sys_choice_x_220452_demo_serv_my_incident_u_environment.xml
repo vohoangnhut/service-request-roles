@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_environment" table="x_220452_demo_serv_my_incident" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non Environment Issue</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fa8e51dcdbc213005b76f8fdbf9619ec</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:11:05</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Production</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b68e51dcdbc213005b76f8fdbf9619e5</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:19:46</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Development</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7e8e51dcdbc213005b76f8fdbf9619e7</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:20:25</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>368e51dcdbc213005b76f8fdbf9619ea</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:20:25</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>E2E Testing</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e8e51dcdbc213005b76f8fdbf9619e2</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:17:25</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_environment</element>
+            <name>x_220452_demo_serv_my_incident</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-09 10:02:07</sys_created_on>
+            <sys_id>728e51dcdbc213005b76f8fdbf9619e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_environment</sys_name>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_choice_x_220452_demo_serv_my_incident_u_environment</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:02:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

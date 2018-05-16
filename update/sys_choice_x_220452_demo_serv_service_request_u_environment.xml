@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_environment" table="x_220452_demo_serv_service_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>E2E Testing</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9539baadb3113005b76f8fdbf96190a</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:18:43</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dev</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3553dbaadb3113005b76f8fdbf96191e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:18:45</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3153dbaadb3113005b76f8fdbf961920</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:18:47</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Staging</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d53dbaadb3113005b76f8fdbf961921</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:18:50</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Training</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3953dbaadb3113005b76f8fdbf961923</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:18:52</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Production</label>
+            <language>en</language>
+            <name>x_220452_demo_serv_service_request</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3553dbaadb3113005b76f8fdbf961925</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-09 10:18:54</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_environment</element>
+            <name>x_220452_demo_serv_service_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-04 08:03:03</sys_created_on>
+            <sys_id>bd53dbaadb3113005b76f8fdbf96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_environment</sys_name>
+            <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+            <sys_update_name>sys_choice_x_220452_demo_serv_service_request_u_environment</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-04 08:03:03</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
