@@ -5,22 +5,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_220452_demo_serv_category_master</name>
+        <name>x_220452_demo_serv_service_request</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
-        <sys_created_by>minhluong</sys_created_by>
-        <sys_created_on>2018-05-15 02:48:30</sys_created_on>
-        <sys_id>a5d4360adb0213005b76f8fdbf961951</sys_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-04 07:49:03</sys_created_on>
+        <sys_id>9bcea8264f021300a7408020a310c7b3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_220452_demo_serv_category_master</sys_name>
+        <sys_name>x_220452_demo_serv_service_request</sys_name>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
-        <sys_update_name>ua_table_licensing_config_a5d4360adb0213005b76f8fdbf961951</sys_update_name>
-        <sys_updated_by>minhluong</sys_updated_by>
-        <sys_updated_on>2018-05-15 02:48:30</sys_updated_on>
+        <sys_update_name>ua_table_licensing_config_9bcea8264f021300a7408020a310c7b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-04 07:49:03</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

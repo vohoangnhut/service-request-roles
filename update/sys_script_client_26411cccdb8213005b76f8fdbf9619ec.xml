@@ -11,29 +11,41 @@
         <name>onLoad Service Request</name>
         <order/>
         <script><![CDATA[function onLoad() {
-	var control = g_form.getControl('u_criterion_2');
-	if (control.options.length == 1) {
-		g_form.setDisplay('u_criterion_2', false);
-	}
-	control = g_form.getControl('u_criterion_3');
-	if (control.options.length == 1) {
-		g_form.setDisplay('u_criterion_3', false);
-	}
-	control = g_form.getControl('u_criterion_4');
-	if (control.options.length == 1) {
-		g_form.setDisplay('u_criterion_4', false);
-	}
-	control = g_form.getControl('u_criterion_5');
-	if (control.options.length == 1) {
-		g_form.setDisplay('u_criterion_5', false);
-	}
-	control = g_form.getControl('u_criterion_6');
-	if (control.options.length == 1) {
-		g_form.setDisplay('u_criterion_6', false);
-	}
-	control = g_form.getControl('u_criterion_7');
-	if (control.options.length == 1) {
-		g_form.setDisplay('u_criterion_7', false);
+	var loadingDialog = new GlideDialogWindow("dialog_loading", true);
+	loadingDialog.setPreference('table', 'loading');
+	loadingDialog.setTitle('Loading...'); //Set the loading dialog title here...
+	loadingDialog.render();
+	g_form.clearOptions('u_category');
+	g_form.clearOptions('u_criterion_1');
+	g_form.clearOptions('u_criterion_2');
+	g_form.clearOptions('u_criterion_3');
+	g_form.clearOptions('u_criterion_4');
+	g_form.clearOptions('u_criterion_5');
+	g_form.clearOptions('u_criterion_6');
+	g_form.clearOptions('u_criterion_7');
+
+	// Instantiate the GetTeacher Script Include
+	var funcGetFromParentID = new GlideAjax('ClientCategoryMasterUtils');
+	// Specify the getTeacher method
+	funcGetFromParentID.addParam('sysparm_name', 'getByRoles');
+	// Send the request to the server
+	funcGetFromParentID.getXML(populateData);
+
+	// When the response is back from the server
+	function populateData(response) {
+		loadingDialog.destroy();
+		var data = JSON.parse(response.responseXML.documentElement.getAttribute("answer"));
+		g_scratchpad.data = data;
+		g_form.addOption('u_category', '', '-- None --');
+		for (var i = 0 ; i < data.length ; i++) {
+			if (data[i].parent_id == ''){
+				g_form.addOption('u_category', data[i].id, data[i].name);
+			}
+		}
+		if (!g_form.isNewRecord() && g_scratchpad.u_category_old != '') {
+			g_form.setValue('u_category', g_scratchpad.u_category_old);
+			g_scratchpad.u_category_old = '';
+		}
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -42,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>26411cccdb8213005b76f8fdbf9619ec</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>onLoad Service Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
@@ -50,7 +62,7 @@
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_script_client_26411cccdb8213005b76f8fdbf9619ec</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-08 09:48:57</sys_updated_on>
+        <sys_updated_on>2018-05-22 03:26:12</sys_updated_on>
         <table>x_220452_demo_serv_service_request</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

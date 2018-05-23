@@ -8,7 +8,7 @@
         <field>u_criterion_7</field>
         <global>true</global>
         <messages/>
-        <name>onChange [Criterion 7] SR</name>
+        <name>onChange [Criterion 7] MI</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 	if (isLoading) {
@@ -23,20 +23,20 @@
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-05-08 07:47:01</sys_created_on>
+        <sys_created_on>2018-05-18 03:36:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>1be5b7ffdb7113005b76f8fdbf9619f5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>onChange [Criterion 7] SR</sys_name>
+        <sys_id>f36cd6c34f421300a7408020a310c726</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange [Criterion 7] MI</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
-        <sys_update_name>sys_script_client_1be5b7ffdb7113005b76f8fdbf9619f5</sys_update_name>
+        <sys_update_name>sys_script_client_f36cd6c34f421300a7408020a310c726</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-09 09:25:49</sys_updated_on>
-        <table>x_220452_demo_serv_service_request</table>
+        <sys_updated_on>2018-05-18 03:36:34</sys_updated_on>
+        <table>x_220452_demo_serv_my_incident</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
         <view/>

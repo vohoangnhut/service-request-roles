@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_theme">
+    <sys_ui_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <css>/* Header Colors */&#13;
+/* Search text color */ &#13;
+$search-text-color: #000&#13;
+/* Topbar background color*/&#13;
+$navpage-header-bg: #C00C73&#13;
+/* Topbar text color */&#13;
+$navpage-header-color: #fff&#13;
+/* Bottom border color on topbar */ &#13;
+$navpage-header-divider-color: #90205E&#13;
+&#13;
+/* Left nav and navigation toolbar background color */&#13;
+/* Navigator hover color */&#13;
+$nav-highlight-main: #CD5762&#13;
+/* Background for expanded navigation items */&#13;
+$subnav-background-color: #C12E3C&#13;
+/* Backgorund for navigator (left side only). */&#13;
+$navpage-nav-bg: #eee&#13;
+/* Background for Favorites list, history list, and Connect list background. */&#13;
+$navpage-nav-bg-sub: #eee&#13;
+/* Text color in main navigation */&#13;
+$navpage-nav-color-sub: #eee&#13;
+/* Text color when hovering over items in main nav */&#13;
+$navpage-nav-mod-text-hover: #eee&#13;
+/* Divider color in Navigator */&#13;
+$nav-hr-color: #9D202C&#13;
+&#13;
+/* Navigator tabs */&#13;
+/* Active nav item underneath search */&#13;
+$nav-highlight-bar-active: #8F232E&#13;
+/* Inactive nav items underneath search */&#13;
+$nav-highlight-bar-inactive: #D6D6D6&#13;
+/* Background for currently selected navigation item underneath search */&#13;
+$navpage-nav-selected-bg: #C12E3C&#13;
+/* Color of icon for currently active nav item. */&#13;
+$navpage-nav-selected-color: #eee&#13;
+/* Color of icons for non inactive nav items.*/&#13;
+$navpage-nav-unselected-color: #9D202C&#13;
+&#13;
+/* Navigator Application text */&#13;
+/* Color for latest connect messages in right bar. */&#13;
+$connect-latest-message: #CD5762&#13;
+/* Timestamp header backgrounds in History tab*/&#13;
+$nav-timeago-header-color: #CD5762&#13;
+/* Core content text color */&#13;
+$navpage-nav-app-text: #c22c3a&#13;
+/* Core content text color hover*/&#13;
+$navpage-nav-app-text-hover: #eee&#13;
+&#13;
+/* Color of outline for search */&#13;
+$navpage-nav-border: #C12E3C&#13;
+/* Default button/icon colors */&#13;
+$navpage-button-color:  #CD5762&#13;
+/* Hover color for ^^^ */&#13;
+$navpage-button-color-hover: #9C212D</css>
+        <device>concourse</device>
+        <name>Láp Lét Sờ</name>
+        <sys_class_name>sys_ui_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-22 04:55:07</sys_created_on>
+        <sys_id>b4e4d7904f921300a7408020a310c771</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Láp Lét Sờ</sys_name>
+        <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+        <sys_update_name>sys_ui_theme_b4e4d7904f921300a7408020a310c771</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-22 04:58:51</sys_updated_on>
+    </sys_ui_theme>
+</record_update>

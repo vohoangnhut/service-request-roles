@@ -8,7 +8,10 @@
         <description>Default access control on x_220452_demo_serv_service_request</description>
         <name>x_220452_demo_serv_service_request</name>
         <operation display_value="read">read</operation>
-        <script><![CDATA[answer = (gs.getUserID() == current.u_ticket_requester || isMemberOfForScopedApp(current.assignment_group));
+        <script><![CDATA[var answer = true;
+if (!current.isNewRecord()) {
+	answer = (gs.getUserID() == current.u_ticket_requester || isMemberOfForScopedApp(current.assignment_group));
+}
 // Note: standard 'isMemberOf' does not work within Scoped App
 // gs.getUser().isMemberOf(current.assignment_group);
 function isMemberOfForScopedApp(groupID){
@@ -29,14 +32,14 @@ function isMemberOfForScopedApp(groupID){
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-04 07:49:02</sys_created_on>
         <sys_id>ac205b2adb3113005b76f8fdbf9619e9</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>x_220452_demo_serv_service_request</sys_name>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_security_acl_ac205b2adb3113005b76f8fdbf9619e9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-10 05:04:44</sys_updated_on>
+        <sys_updated_on>2018-05-16 07:27:10</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

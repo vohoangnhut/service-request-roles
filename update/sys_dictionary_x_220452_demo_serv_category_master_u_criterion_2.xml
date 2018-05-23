@@ -16,8 +16,8 @@
         <default_value/>
         <defaultsort/>
         <delete_roles/>
-        <dependent>u_criterion_1</dependent>
-        <dependent_on_field>u_criterion_1</dependent_on_field>
+        <dependent/>
+        <dependent_on_field/>
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
@@ -49,7 +49,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-15 08:46:46</sys_created_on>
-        <sys_id>29d6089adbc213005b76f8fdbf9619b4</sys_id>
+        <sys_id>b2cea8264f021300a7408020a310c742</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Criterion 2</sys_name>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
@@ -57,7 +57,7 @@
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_dictionary_x_220452_demo_serv_category_master_u_criterion_2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-15 08:46:46</sys_updated_on>
+        <sys_updated_on>2018-05-17 07:16:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

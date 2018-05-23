@@ -11,15 +11,27 @@
         <name>onChange [Category] SR</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-// 	if (g_user.hasRoleExactly('x_220452_demo_serv.minhluong')) {
-// 		g_form.removeOption('u_category', 'Access-Related');
-// 		g_form.removeOption('u_category', 'Infrastructure');
-// 		g_form.removeOption('u_category', 'User Device');
-// 	}
-// 	if (g_user.hasRoleExactly('x_220452_demo_serv.nhutvo')) {
-// 		g_form.removeOption('u_category', 'Application');
-// 		g_form.removeOption('u_category', 'Groupware');
-// 	}
+	g_form.clearOptions('u_criterion_1');
+	g_form.addOption('u_criterion_1', '', '-- None --');
+	if (isLoading || newValue === '') {
+		g_form.setDisplay('u_criterion_1', false);
+		return;
+	}
+
+	g_scratchpad.data.forEach(function(item) {
+		if (newValue == item.parent_id) {
+			g_form.addOption('u_criterion_1', item.id, item.name);
+		}
+	});
+	if (!g_form.isNewRecord() && g_scratchpad.u_criterion_1_old != '') {
+		g_form.setValue('u_criterion_1', g_scratchpad.u_criterion_1_old);
+		g_scratchpad.u_criterion_1_old = '';
+	}
+	if (g_form.getControl('u_criterion_1').options.length > 1) {
+		g_form.setDisplay('u_criterion_1', true);
+	} else {
+		g_form.setDisplay('u_criterion_1', false);
+	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -27,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d6a073cdb8213005b76f8fdbf9619e5</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>onChange [Category] SR</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
@@ -35,7 +47,7 @@
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_script_client_9d6a073cdb8213005b76f8fdbf9619e5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-16 02:15:13</sys_updated_on>
+        <sys_updated_on>2018-05-18 03:43:57</sys_updated_on>
         <table>x_220452_demo_serv_service_request</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

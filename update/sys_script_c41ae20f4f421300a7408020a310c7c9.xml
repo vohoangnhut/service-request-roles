@@ -3,10 +3,10 @@
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
         <access>package_private</access>
-        <action_delete>false</action_delete>
+        <action_delete>true</action_delete>
         <action_insert>false</action_insert>
         <action_query>false</action_query>
-        <action_update>true</action_update>
+        <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Test Before UPdate</name>
+        <name>Delete related records for CM</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,31 +29,37 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-	gs.addInfoMessage('TEst');
-	if (current == null) {
-		var x= 1;
-		
+	// Delete all child records
+	var gr = new GlideRecord('x_220452_demo_serv_category_master');
+	var qc = gr.addQuery('u_category', current.id); 
+	qc.addOrCondition('u_criterion_1', current.id);
+	qc.addOrCondition('u_criterion_2', current.id);
+	qc.addOrCondition('u_criterion_3', current.id);
+	qc.addOrCondition('u_criterion_4', current.id);
+	qc.addOrCondition('u_criterion_5', current.id);
+	qc.addOrCondition('u_criterion_6', current.id);
+	gr.query();
+	while (gr.next()) {
+		gr.deleteRecord();
 	}
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-05-15 09:50:53</sys_created_on>
+        <sys_created_on>2018-05-18 04:43:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>11559016db0613005b76f8fdbf961971</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Test Before UPdate</sys_name>
+        <sys_id>c41ae20f4f421300a7408020a310c7c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Delete related records for CM</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
-        <sys_update_name>sys_script_11559016db0613005b76f8fdbf961971</sys_update_name>
+        <sys_update_name>sys_script_c41ae20f4f421300a7408020a310c7c9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-16 03:16:09</sys_updated_on>
+        <sys_updated_on>2018-05-18 04:51:04</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=11559016db0613005b76f8fdbf961971"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c41ae20f4f421300a7408020a310c7c9"/>
 </record_update>

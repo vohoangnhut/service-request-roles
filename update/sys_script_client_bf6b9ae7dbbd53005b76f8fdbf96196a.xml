@@ -11,21 +11,26 @@
         <name>onChange [Criterion 2] SR</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-	if (isLoading) {
+	g_form.clearOptions('u_criterion_3');
+	g_form.addOption('u_criterion_3', '', '-- None --');
+	if (isLoading || newValue === '') {
+		g_form.setDisplay('u_criterion_3', false);
 		return;
 	}
-	if (g_user.hasRoleExactly('x_220452_demo_serv.minhluong')) {
-		if (g_form.getValue('u_criterion_1') == 'OPUS') {
-			g_form.removeOption('u_criterion_2', 'Container');
-// 			g_form.removeOption('u_criterion_2', 'EDI');
-// 			g_form.removeOption('u_criterion_2', 'HW');
-		}
-	}
 
-	if (control.options.length == 1) {
-		g_form.setDisplay('u_criterion_2', false);
+	g_scratchpad.data.forEach(function(item) {
+		if (newValue == item.parent_id) {
+			g_form.addOption('u_criterion_3', item.id, item.name);
+		}
+	});
+	if (!g_form.isNewRecord() && g_scratchpad.u_criterion_3_old != '') {
+		g_form.setValue('u_criterion_3', g_scratchpad.u_criterion_3_old);
+		g_scratchpad.u_criterion_3_old = '';
+	}
+	if (g_form.getControl('u_criterion_3').options.length > 1) {
+		g_form.setDisplay('u_criterion_3', true);
 	} else {
-		g_form.setDisplay('u_criterion_2', true);
+		g_form.setDisplay('u_criterion_3', false);
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -34,15 +39,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf6b9ae7dbbd53005b76f8fdbf96196a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>onChange [Criterion 2] SR</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_script_client_bf6b9ae7dbbd53005b76f8fdbf96196a</sys_update_name>
-        <sys_updated_by>minhluong</sys_updated_by>
-        <sys_updated_on>2018-05-14 03:00:10</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-18 03:44:30</sys_updated_on>
         <table>x_220452_demo_serv_service_request</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

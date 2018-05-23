@@ -6,7 +6,7 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Set values for Category Master</name>
+        <name>Set fields for Category Master</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -46,8 +46,10 @@
 		parentID = current.u_category;
 	}
 	current.parent_id = parentID;
-	// Generate UUID
-	current.id = gs.generateGUID();
+	if (current.isNewRecord()) {
+		// Generate UUID
+		current.id = gs.generateGUID();
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -55,15 +57,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>43b6ab86db8213005b76f8fdbf96195b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Set values for Category Master</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Set fields for Category Master</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_script_43b6ab86db8213005b76f8fdbf96195b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-16 03:15:46</sys_updated_on>
+        <sys_updated_on>2018-05-17 01:58:02</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

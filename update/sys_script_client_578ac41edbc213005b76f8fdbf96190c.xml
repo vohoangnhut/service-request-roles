@@ -11,39 +11,26 @@
         <name>onChange [Criterion 4] Category Master</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	g_form.clearOptions('u_criterion_5');
+	g_form.addOption('u_criterion_5', '', '-- None --');
 	if (isLoading || newValue === '') {
-// 		g_form.clearOptions('u_criterion_5');
-// 		g_form.setValue('u_criterion_5', '', '');
 		g_form.setDisplay('u_criterion_5', false);
 		return;
 	}
 
-	// Instantiate the GetTeacher Script Include
-	var funcGetFromParentID = new GlideAjax('ClientCategoryMasterUtils');
-	// Specify the getTeacher method
-	funcGetFromParentID.addParam('sysparm_name', 'getFromParentID');
-	// Pass the Requested for tchr_id
-	funcGetFromParentID.addParam('sysparm_parentID', g_form.getValue('u_criterion_4'));
-	// Send the request to the server
-	funcGetFromParentID.getXML(populateData);
-
-	// When the response is back from the server
-	function populateData(response) {
-		var answer = JSON.parse(response.responseXML.documentElement.getAttribute("answer"));
-		g_form.clearOptions('u_criterion_5');
-		answer.unshift({id : '', name: '-- None --'});
-		setTimeout(function(){
-			// g_form.addOption('u_criterion_5', '', '-- None --');
-			answer.forEach(function(item) {
-				g_form.addOption('u_criterion_5', item.id, item.name);
-			});
-			if (!g_form.isNewRecord()) {
-				g_form.setValue('u_criterion_5', g_scratchpad.u_criterion_5_old);
-			}
-		}, 100);
-		if (answer.length > 0) {
-			g_form.setDisplay('u_criterion_5', true);
+	g_scratchpad.data.forEach(function(item) {
+		if (newValue == item.parent_id) {
+			g_form.addOption('u_criterion_5', item.id, item.name);
 		}
+	});
+	if (!g_form.isNewRecord() && g_scratchpad.u_criterion_5_old != '') {
+		g_form.setValue('u_criterion_5', g_scratchpad.u_criterion_5_old);
+		g_scratchpad.u_criterion_5_old = '';
+	}
+	if (g_form.getControl('u_criterion_5').options.length > 1) {
+		g_form.setDisplay('u_criterion_5', true);
+	} else {
+		g_form.setDisplay('u_criterion_5', false);
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -52,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>578ac41edbc213005b76f8fdbf96190c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>onChange [Criterion 4] Category Master</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
@@ -60,7 +47,7 @@
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_script_client_578ac41edbc213005b76f8fdbf96190c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-16 04:30:32</sys_updated_on>
+        <sys_updated_on>2018-05-17 09:18:15</sys_updated_on>
         <table>x_220452_demo_serv_category_master</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

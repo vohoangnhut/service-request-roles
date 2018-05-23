@@ -9,16 +9,56 @@
         <name>ClientCategoryMasterUtils</name>
         <script><![CDATA[var ClientCategoryMasterUtils = Class.create();
 ClientCategoryMasterUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	getFromParentID: function(){ 
-		var gr = new GlideRecord('x_220452_demo_serv_category_master');
-		gr.addQuery('parent_id', this.getParameter('sysparm_parentID'));
-		gr.query();
+	// 	getFromParentID: function(){ 
+	// 		var gr = new GlideRecord('x_220452_demo_serv_category_master');
+	// 		gr.addQuery('parent_id', this.getParameter('sysparm_parentID'));
+	// 		gr.query();
+	// 		var array = [];
+	// 		while (gr.next()) {
+	// 			var object = {};
+	// 			object.id = gr.getDisplayValue('id');
+	// 			object.name = gr.getDisplayValue('name');
+	// 			object.roles = gr.getDisplayValue('u_roles');
+	// 			array.push(object);
+	// 		}
+	// 		var data = JSON.stringify(array);
+	// 		return data;
+	// 	},
+	getAll: function(){ 
 		var array = [];
+		var gr = new GlideRecord('x_220452_demo_serv_category_master');
+		gr.query();
 		while (gr.next()) {
 			var object = {};
 			object.id = gr.getDisplayValue('id');
+			object.parent_id = gr.getDisplayValue('parent_id');
 			object.name = gr.getDisplayValue('name');
 			array.push(object);
+		}
+		var data = JSON.stringify(array);
+		return data;
+	},
+	getByRoles: function(){ 
+		var current_user_roles = gs.getUser().roles.toString().split(',');
+		var array = [];
+		var gr = new GlideRecord('x_220452_demo_serv_category_master');
+		gr.query();
+		while (gr.next()) {
+			var hasRole = (current_user_roles.indexOf('admin') > -1);
+			var roles = gr.getDisplayValue('u_roles').split(', ');
+			for (var i = 0; i < roles.length; i++) {
+				if (current_user_roles.indexOf(roles[i]) > -1) {
+					hasRole = true;
+					break;
+				}
+			}
+			if (hasRole) {
+				var object = {};
+				object.id = gr.getDisplayValue('id');
+				object.parent_id = gr.getDisplayValue('parent_id');
+				object.name = gr.getDisplayValue('name');
+				array.push(object);
+			}
 		}
 		var data = JSON.stringify(array);
 		return data;
@@ -29,13 +69,13 @@ ClientCategoryMasterUtils.prototype = Object.extendsObject(global.AbstractAjaxPr
         <sys_created_by>minhluong</sys_created_by>
         <sys_created_on>2018-05-15 03:39:00</sys_created_on>
         <sys_id>6f1d364edb0213005b76f8fdbf9619dd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>ClientCategoryMasterUtils</sys_name>
         <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
         <sys_update_name>sys_script_include_6f1d364edb0213005b76f8fdbf9619dd</sys_update_name>
-        <sys_updated_by>minhluong</sys_updated_by>
-        <sys_updated_on>2018-05-15 03:39:00</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-18 03:15:54</sys_updated_on>
     </sys_script_include>
 </record_update>

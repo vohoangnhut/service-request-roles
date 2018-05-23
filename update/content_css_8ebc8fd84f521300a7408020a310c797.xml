@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>Custom Style</name>
+        <style>$search-text-color: #e7e9eb                         &#13;
+$navpage-header-bg: #303a46                         &#13;
+$navpage-header-color: #ffffff&#13;
+$navpage-header-divider-color: #455464&#13;
+          &#13;
+$nav-highlight-main: #3D4853                        &#13;
+$subnav-background-color: #455464                   &#13;
+$navpage-nav-bg: #303a46                              &#13;
+$navpage-nav-bg-sub: #455464                           &#13;
+$navpage-nav-color-sub: #bec1c6                        &#13;
+$navpage-nav-mod-text-hover: #ffffff                   &#13;
+$nav-hr-color: #303a46                              &#13;
+          &#13;
+$nav-highlight-bar-active: #278efc                  &#13;
+$nav-highlight-bar-inactive: #828890                &#13;
+$navpage-nav-selected-bg: #4B545F                   &#13;
+$navpage-nav-selected-color: #ffffff                  &#13;
+$navpage-nav-unselected-color: #bec1c6              &#13;
+          &#13;
+$connect-latest-message: #cfd4d8                    &#13;
+$nav-timeago-header-color: #303a46                  &#13;
+$navpage-nav-app-text: #cfd4d8                      &#13;
+$navpage-nav-app-text-hover: #ffffff                  &#13;
+$navpage-nav-border: #ddd                        &#13;
+$navpage-button-color:  #fff  &#13;
+$navpage-button-color-hover: #7EC24F  </style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-22 04:19:25</sys_created_on>
+        <sys_id>8ebc8fd84f521300a7408020a310c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Style</sys_name>
+        <sys_package display_value="Demo_Service_Request" source="x_220452_demo_serv">a7ef872adb3113005b76f8fdbf9619f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo_Service_Request">a7ef872adb3113005b76f8fdbf9619f7</sys_scope>
+        <sys_update_name>content_css_8ebc8fd84f521300a7408020a310c797</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-22 04:19:25</sys_updated_on>
+        <type>local</type>
+        <url/>
+    </content_css>
+</record_update>

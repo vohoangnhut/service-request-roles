@@ -1,66 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Service Request" max_length="40" name="x_220452_demo_serv_service_request" sizeclass="2" type="collection">
+    <element audit="true" extends="task" label="Service Request" max_length="40" name="x_220452_demo_serv_service_request" sizeclass="5" type="collection">
         <element label="Actual Effort" max_length="40" name="u_actual_effort" type="glide_duration"/>
         <element label="Assign Business SME" max_length="40" name="u_assign_business_sme" type="boolean"/>
         <element label="Assign Tech Team" max_length="40" name="u_assign_tech_team" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Category" mandatory="true" max_length="40" name="u_category" type="string">
-            <choice>
-                <element label="Access-Related" sequence="0" value="Access-Related"/>
-                <element label="Application" sequence="1" value="Application"/>
-                <element label="Groupware" sequence="2" value="Groupware"/>
-                <element label="Infrastructure" sequence="3" value="Infrastructure"/>
-                <element label="User Device" sequence="4" value="User Device"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_category" dependent_on_field="u_category" label="[Criterion 1]" mandatory="true" max_length="40" name="u_criterion_1" type="string" use_dependent_field="true">
-            <choice>
-                <element dependent_value="Access-Related" label="AIMS (MARS)" sequence="0" value="AIMS (MARS)"/>
-                <element dependent_value="Application" label="IBIS Plus" sequence="0" value="IBIS Plus"/>
-                <element dependent_value="Access-Related" label="AODOCS" sequence="1" value="AODOCS"/>
-                <element dependent_value="Application" label="INTTRA" sequence="1" value="INTTRA"/>
-                <element dependent_value="Access-Related" label="BACS" sequence="2" value="BACS"/>
-                <element dependent_value="Application" label="OPUS" sequence="2" value="OPUS"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_1" dependent_on_field="u_criterion_1" label="[Criterion 2]" max_length="40" name="u_criterion_2" type="string" use_dependent_field="true">
-            <choice>
-                <element dependent_value="OPUS" label="Container" sequence="0" value="Container"/>
-                <element dependent_value="OPUS" label="EDI" sequence="1" value="EDI"/>
-                <element dependent_value="OPUS" label="HW" sequence="2" value="HW"/>
-                <element dependent_value="OPUS" label="S/W" sequence="3" value="S/W"/>
-                <element dependent_value="OPUS" label="Stowage" sequence="4" value="Stowage"/>
-                <element dependent_value="OPUS" label="System S/W" sequence="5" value="System S/W"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_2" dependent_on_field="u_criterion_2" label="[Criterion 3]" max_length="40" name="u_criterion_3" type="string" use_dependent_field="true">
-            <choice>
-                <element dependent_value="Container" label="Administer" sequence="0" value="Administer"/>
-                <element dependent_value="Container" label="Biz Common" sequence="1" value="Biz Common"/>
-                <element dependent_value="Container" label="Equipment Management" sequence="2" value="Equipment Management"/>
-                <element dependent_value="Container" label="Sales Management" sequence="3" value="Sales Management"/>
-                <element dependent_value="Container" label="Service Management" sequence="4" value="Service Management"/>
-                <element dependent_value="Container" label="Statement Management" sequence="5" value="Statement Management"/>
-                <element dependent_value="Container" label="Support &amp; Admin" sequence="6" value="Support &amp; Admin"/>
-                <element dependent_value="Container" label="Vessel Operation" sequence="7" value="Vessel Operation"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_3" dependent_on_field="u_criterion_3" label="[Criterion 4]" max_length="40" name="u_criterion_4" type="string" use_dependent_field="true">
-            <choice>
-                <element dependent_value="Administer" label="ACCESS HISTORY" sequence="0" value="ACCESS HISTORY"/>
-                <element dependent_value="Administer" label="SYSTEM" sequence="1" value="SYSTEM"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_4" dependent_on_field="u_criterion_4" label="[Criterion 5]" max_length="40" name="u_criterion_5" type="string" use_dependent_field="true">
-            <choice>
-                <element dependent_value="ACCESS HISTORY" label="Last Login Date" sequence="0" value="Last Login Date"/>
-                <element dependent_value="ACCESS HISTORY" label="User Access History" sequence="1" value="User Access History"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_5" dependent_on_field="u_criterion_5" label="[Criterion 6]" max_length="40" name="u_criterion_6" type="string" use_dependent_field="true">
             <choice/>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_criterion_6" dependent_on_field="u_criterion_6" label="[Criterion 7]" max_length="40" name="u_criterion_7" type="string" use_dependent_field="true">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="[Criterion 1]" mandatory="true" max_length="40" name="u_criterion_1" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="[Criterion 2]" max_length="40" name="u_criterion_2" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="[Criterion 3]" max_length="40" name="u_criterion_3" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="[Criterion 4]" max_length="40" name="u_criterion_4" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="[Criterion 5]" max_length="40" name="u_criterion_5" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="[Criterion 6]" max_length="40" name="u_criterion_6" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="[Criterion 7]" max_length="40" name="u_criterion_7" type="string" use_dependent_field="true">
             <choice/>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Environment" max_length="40" name="u_environment" type="string">

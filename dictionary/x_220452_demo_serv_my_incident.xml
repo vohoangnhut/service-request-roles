@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="incident" label="Incident" max_length="40" name="x_220452_demo_serv_my_incident" sizeclass="1" type="collection">
+    <element audit="true" extends="incident" label="Incident" max_length="40" name="x_220452_demo_serv_my_incident" sizeclass="2" type="collection">
         <element label="Actual Effort" max_length="40" name="u_actual_effort" type="glide_duration"/>
         <element label="Assign Business SME" max_length="40" name="u_assign_business_sme" type="boolean"/>
         <element label="Assign Tech Team" max_length="40" name="u_assign_tech_team" type="boolean"/>

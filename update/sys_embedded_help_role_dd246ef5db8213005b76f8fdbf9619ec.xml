@@ -2,7 +2,7 @@
 <record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
-        <role display_value="sn_dd_demo_service_request_workflow" name="sn_dd_demo_service_request_workflow">95246ef5db8213005b76f8fdbf9619eb</role>
+        <role display_value="">95246ef5db8213005b76f8fdbf9619eb</role>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-14 06:57:06</sys_created_on>
